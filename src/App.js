@@ -7,6 +7,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Welcome to your daily future!</h1>
+        <div class='calendar' style={{backgroundColor: 'red', width: '100px', height: '100px'}}>
+        </div>
+        <div class='weather' style={{backgroundColor: 'blue', width: '100px', height: '100px'}}>
+        </div>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

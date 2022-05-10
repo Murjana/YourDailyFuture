@@ -1,7 +1,17 @@
 import sun from './sun.svg';
 import './App.css';
+import rainy from './rainy.svg';
 
 function App() {
+  var temperature = Math.round(Math.random()* 30);
+  var image;
+  if (temperature > 20) {
+    image = sun;
+  }
+  else {
+    image = rainy;
+
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -19,8 +29,8 @@ function App() {
             </div>
             <div className='weather'>
             <h2> Weather</h2>
-            <img className ="weather-image" src ={sun}/>
-            <h3 className='temperature'> 23 degrees </h3>
+            <img className ="weather-image" src ={image}/>
+            <h3 className='temperature'> {temperature} degrees </h3>
             </div>
           </div>
         <p>

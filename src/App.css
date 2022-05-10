@@ -17,17 +17,23 @@
 
 .flex-container{
   display: flex;
+  flex: 1;
   flex-direction: row;
+  height: 100vh;
+}
+
+.main-container{
+  display: flex;
 }
 
 .calendar {
    background-color: red;
-   flex: auto;
-   height: 100px;
+   flex: 1;
+   /* height: 100px; */
   }
 
   .weather {
     background-color:  blue;
-    flex: auto;
-    height: 100px;
+    flex: 1;
+    /* height: 100px; */
   }

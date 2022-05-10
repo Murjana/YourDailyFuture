@@ -7,12 +7,12 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Welcome to your daily future!</h1>
-        <div class='calendar' style={{backgroundColor: 'red', width: '100px', height: '100px'}}>
+        <div className= 'flex-container'>
+          <div className='calendar'></div>
+          <div className='weather'></div>
         </div>
-        <div class='weather' style={{backgroundColor: 'blue', width: '100px', height: '100px'}}>
-        </div>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <p>
+          Get to know how your day looks for the day!
         </p>
         <a
           className="App-link"

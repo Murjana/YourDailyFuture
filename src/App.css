@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.calendar {
+   background-color: red;
+   width: 100px;
+  height: 100px;
+  }
+
+  .weather {
+    background-color:  blue;
+    width: 100px;
+    height: 100px;
+  }

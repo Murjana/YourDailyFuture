@@ -49,4 +49,9 @@
 
   .calendar-list {
     list-style-type: none;
+    padding-left: 0;
+  }
+  .weather-image
+  {
+    width: 250px;
   }

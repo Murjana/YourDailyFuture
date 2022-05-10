@@ -5,6 +5,13 @@ import rainy from './rainy.svg';
 function App() {
   var temperature = Math.round(Math.random()* 30);
   var image;
+  // todo: use this array directly in html
+  var events = [
+  'Coffee with Lisa at 11',
+  'Stand up meeting at 12',
+  'Tennis practice at 18'
+]
+
   if (temperature > 20) {
     image = sun;
   }
@@ -22,6 +29,7 @@ function App() {
             <div className='calendar'>
               <h2> Calendar </h2>
               <ul className= 'calendar-list'>
+                {/* {events} */}
                 <li> Coffee with Lisa at 11</li>
                 <li> Stand up meeting at 12</li>
                 <li> Tennis practice at 18</li>

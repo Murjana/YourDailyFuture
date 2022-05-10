@@ -22,12 +22,12 @@
 
 .calendar {
    background-color: red;
-   width: 100px;
-  height: 100px;
+   flex: auto;
+   height: 100px;
   }
 
   .weather {
     background-color:  blue;
-    width: 100px;
+    flex: auto;
     height: 100px;
   }

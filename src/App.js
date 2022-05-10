@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import sun from './sun.svg';
 import './App.css';
 
 function App() {
@@ -19,6 +19,8 @@ function App() {
             </div>
             <div className='weather'>
             <h2> Weather</h2>
+            <img src ={sun}/>
+            <h3 className='temperature'> 23 degrees </h3>
             </div>
           </div>
         <p>

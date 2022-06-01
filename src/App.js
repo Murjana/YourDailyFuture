@@ -1,10 +1,9 @@
 import sun from './sun.svg';
 import './App.css';
 import rainy from './rainy.svg';
-import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils';
 
 class CalendarEntry {
-  Constructor (description, date) {
+  constructor (description, date) {
   this.description = description;
   this.date = date;
 }
@@ -15,9 +14,9 @@ function App() {
   var image;
   // todo: use this array directly in html
   var events = [
-   new CalendarEntry ('Coffee with Lisa', 11),
-   new CalendarEntry ('Stand up meeting', 12),
-   new CalendarEntry ('Tennis practice', 18),
+   new CalendarEntry('Coffee with Lisa', '11'),
+   new CalendarEntry('Stand up meeting', '12'),
+   new CalendarEntry('Tennis practice', '18'),
 ]
 
   if (temperature > 20) {
@@ -37,10 +36,13 @@ function App() {
             <div className='calendar'>
               <h2> Calendar </h2>
               <ul className= 'calendar-list'>
-                {/* {events} */}
-                <li> Coffee with Lisa at 11</li>
-                <li> Stand up meeting at 12</li>
-                <li> Tennis practice at 18</li>
+                {
+                 events.map( entry =>
+                     (
+                     <li> {entry.description} at {entry.date} </li>
+                  )
+                 )
+                }``
               </ul>
             </div>
             <div className='weather'>

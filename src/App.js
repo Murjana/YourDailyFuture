@@ -1,6 +1,8 @@
 import sun from './sun.svg';
 import './App.css';
 import rainy from './rainy.svg';
+import React, {Component } from 'react';
+
 
 class CalendarEntry {
   constructor (description, date) {
@@ -9,7 +11,9 @@ class CalendarEntry {
 }
 }
 
-function App() {
+class App extends Component {
+
+  render (){
   var temperature = Math.round(Math.random()* 30);
   var image;
   // todo: use this array directly in html
@@ -57,7 +61,7 @@ function App() {
 
       </div>
     </div>
-  );
-}
+);
+}}
 
 export default App;

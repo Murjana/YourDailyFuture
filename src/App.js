@@ -1,15 +1,23 @@
 import sun from './sun.svg';
 import './App.css';
 import rainy from './rainy.svg';
+import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils';
+
+class CalendarEntry {
+  Constructor (description, date) {
+  this.description = description;
+  this.date = date;
+}
+}
 
 function App() {
   var temperature = Math.round(Math.random()* 30);
   var image;
   // todo: use this array directly in html
   var events = [
-  'Coffee with Lisa at 11',
-  'Stand up meeting at 12',
-  'Tennis practice at 18'
+   new CalendarEntry ('Coffee with Lisa', 11),
+   new CalendarEntry ('Stand up meeting', 12),
+   new CalendarEntry ('Tennis practice', 18),
 ]
 
   if (temperature > 20) {
